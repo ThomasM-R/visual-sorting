@@ -1,0 +1,23 @@
+html, body {
+	background: black;
+	height: 100vh;
+  width: 100vw;
+	margin: 0;
+	padding: 0;
+	image-rendering: pixelated;
+	overflow: hidden;
+}
+canvas {
+	height: 100vh;
+  width: 100vw;
+}
+img {
+	position: fixed;
+	filter: invert(0) hue-rotate(0deg);
+	left: 8px;
+	top: 8px;
+	transition: 0.2s;
+}
+img:hover {
+	filter: invert(1) hue-rotate(180deg);
+}
